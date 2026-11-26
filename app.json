@@ -1,25 +1,31 @@
 {
   "expo": {
-    "name": "abroadmedclub",
+    "name": "AbroadMedClub",
     "slug": "abroadmedclub",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
+    "scheme": "abroadmedclub",
+    "platforms": ["ios", "android", "web"],
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abroadmedclub.app"
     },
     "android": {
+      "package": "com.abroadmedclub.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#24594D",
+        "foregroundImage": "./assets/android-icon-foreground.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "name": "AbroadMedClub",
+      "description": "Explore care beyond borders. Find your people along the way.",
+      "themeColor": "#24594D"
+    },
+    "plugins": ["expo-font"]
   }
 }
